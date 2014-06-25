@@ -1,0 +1,400 @@
+body{
+	background:#c3d825;
+	margin:0px;
+}
+#sticky_footer_title {
+	cursor: pointer;
+    position:absolute; 
+    bottom: 110px;/*40*/ 
+    left: 361px; /*50*/
+    background-color:rgba(255,255,255,.3); /*#FF0000*/
+    font-family:Arial, Helvetica, sans-serif; 
+    font-size: 18px; 
+    color:#FFF; 
+    text-shadow:none;
+    line-height: 34px; 
+    padding: 0px 20px 0px 20px;
+	border-radius: 10px 10px 0px 0px;
+}
+#sticky_footer_title a{
+	color:rgba(255,255,255,1);
+	text-decoration:none;
+}
+
+.stickyfooter {
+    position: fixed;/* */
+    bottom: 0px;
+    /*margin: 0 auto;*/
+	left:112px;
+    width: 800px; /*400*/
+}
+
+#stickyfooter {
+    height: 110px;/*40*/
+    background:#e9e9e9;
+    border-top: 1px solid #e9e9e9;
+    padding:0px 10px 0px 10px;
+    font-family:Arial, Helvetica, sans-serif;
+    z-index:1200;
+
+    
+    /* CSS3 Stylings - Creates the double top border */
+    -moz-box-shadow: 0px -1px 0px #e9e9e9;
+    -webkit-box-shadow:  0px -1px 0px #e9e9e9;
+    box-shadow:  0px -1px 0px #e9e9e9;
+    
+    /* CSS3 Rounded Corners */
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+    
+    /* CSS3 Stylings - Creates the gradient background */
+    background: -moz-linear-gradient(top, #FFF, #e9e9e9);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#e9e9e9), to(#FFF));
+}
+
+/* General typography stylings, paragraphs and H2 tags */
+
+#stickyfooter h2 {
+    font-size:24px;
+    line-height:24px;
+    color:#FF6600;
+    letter-spacing:-1px;
+    font-weight:400;
+    padding:0px 10px 0px 10px;
+    margin:12px 0;
+}
+#stickyfooter p {
+
+    color:#cccccc;
+    font-size:18px;
+    padding:0 10px 0 10px;
+    line-height:18px;
+    float:left;
+    margin:10px 0;
+}
+#stickyfooter img {
+    border:none;
+}
+#stickyfooter a {
+    color:#FF6600;
+    text-decoration:none;
+}
+#stickyfooter li ul {
+    list-style:none;
+    padding:0;
+    margin:0 0 12px 0;
+}
+
+#stickyfooter .strong { /* Forcing a bold text */
+    font-weight:bold;
+}
+#stickyfooter .italic { /* Forcing an italic text */
+    font-style:italic;
+}
+.clear { /* Use this class between rows of content when you use columns */
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+/* Images containers */
+
+#stickyfooter .imgshadow { /* Better style on dark background */
+    background:#FFFFFE;
+    padding:4px; /* Makes the light borders thanks to the background color */
+    border:1px solid #333333;
+    margin-top:5px;
+    /* CSS3 shadow */
+    -moz-box-shadow:0px 0px 5px #000000;
+    -webkit-box-shadow:0px 0px 5px #000000;
+    box-shadow:0px 0px 5px #000000;
+}
+#stickyfooter .img_left { /* Image sticks to the left */
+    width:auto;
+    float:left;
+    margin:5px 15px 5px 0px;
+}
+#stickyfooter .img_right { /* Image sticks to the right */
+    width:auto;
+    float:right;
+    margin:5px 0px 5px 15px;
+}
+
+/* Black background text box */
+
+#stickyfooter .black_box {
+    background-color:#111111;
+    padding:4px 6px 4px 6px;
+    margin-bottom:6px;
+
+    /* CSS 3 Rounded Corners */
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    /* CSS 3 Inset Shadow */
+    -webkit-box-shadow:inset 0 0 5px #000000;
+    -moz-box-shadow:inset 0 0 5px #000000;
+    box-shadow:inset 0 0 5px #000000;
+}
+
+/* Social Icons */
+
+#stickyfooter #social {
+    float:right; /* Positionning of the social icons container */
+    width:auto;
+    margin:5px 15px 0px;
+    padding:0px;
+    overflow:hidden;
+}
+#stickyfooter #social li {
+    margin-right:12px; /* 12px is the space between each one of them */
+    _margin-right:0px; /* IE6 only */
+    float:left;
+    width:24px;
+    padding:0px;
+    height:32px;
+    list-style:none;
+}
+#stickyfooter #social li:hover {
+    margin-top:-1px; /* Icons move 1px up on hover, you can remove this if you don't like */
+}
+
+/* Tooltips for social icons */
+
+a.tooltip:hover {
+    text-decoration:none;
+}
+/* The "span" defines the text appearing on mouse hover, these are basic stylings */
+a.tooltip span {
+    display:none;
+    padding:5px;
+    bottom:44px;
+    position:relative;
+    width:55px;
+    text-align:center;
+    /* CSS3 Rounded Corners */
+    -moz-border-radius: 3px; 
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+a.tooltip:hover span {
+    display:block;
+    position:absolute;
+    border:1px solid #333333;
+    background:#181818;
+    color:#dddddd;
+    font-size:12px;
+    margin-left:-20px;
+}
+
+
+
+/*  _______________________________________
+
+    02 FOOTER - DROP DOWN MENU (DROP UP)
+    _______________________________________  */
+
+#footer_menu{
+	list-style: none;    
+    margin: 0;
+    padding: 0;    
+	overflow: auto;
+	width: auto;/*780*/
+	white-space: nowrap; 
+	height:110px;
+	overflow-y:hidden;
+}
+
+#footer_menu li{
+	display:inline-block;
+	cursor:pointer;
+	width:100px;
+	height:100px;
+    list-style: none;
+    /*float: left;*/
+    font-size:11px;
+    padding: 0px;/*12px 10px 14px 10px*/
+	margin:2px;
+    /*border-right:1px solid #d9d9d9;
+    border-left:1px solid #d9d9d9;*/
+    background:#FFF;
+    /* CSS3 Stylings - Creates the gradient background 
+    background: -moz-linear-gradient(top, #FFF, #e9e9e9);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFF), to(#d9d9d9));*/
+}
+
+#footer_menu li img{
+	width:100px;
+	height:100px;
+}
+
+#footer_menu li:last-child { background:none; border:none; }
+
+#footer_menu li:hover {
+    background:#FFF;
+    * CSS3 Stylings - Creates the gradient background *
+    background: -moz-linear-gradient(top, #f2f2f2, #FFF);
+    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#f2f2f2), to(#FFF));
+}
+#footer_menu li:hover:last-child { background:none; border:none; }
+
+#footer_menu li a {
+   display: block;
+   color: #434343;
+   text-decoration: none;
+}
+#footer_menu li a:hover {
+   color: #000;
+}
+
+
+
+#footer_menu .imgmenu { * Used for the home item, text is here hidden and replaced by an image *
+    padding:5px 8px 0px 8px;
+    border:none;
+    background:none;
+}
+#footer_menu .imgmenu a { * Used for the home item, text is here hidden and replaced by an image *
+    background:url("img/home.png") top left no-repeat;
+    width:36px;
+    height:30px;
+}
+#footer_menu li.imgmenu:hover {
+    background:none;
+}
+#footer_menu li.imgmenu a:hover {
+    background:url("img/home2.png") top left no-repeat;
+}
+
+/* Drop Up */
+
+/* You may have heard about drop down menus, the principle is here the same except that
+   the content is going up instead of down */
+ 
+#footer_menu li ul.dropup {
+   display: none; /*none*/
+   width: 15em; /* Width for Opera */
+   
+}
+#footer_menu li:hover ul.dropup  {
+    display: block;
+    position: absolute;
+    margin: 0 0 0 -16px;
+    bottom:40px; /* Distance to the bottom of the browser */
+    background-color:#222222;
+    border: 1px solid #111111;
+    border-bottom:none;
+
+    /* CSS3 Stylings - Rounded Corners */
+    -moz-border-radius: 7px 7px 0px 0px;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+#footer_menu li:hover li { /* Drop up default lists */
+    float: none;
+    background:none;
+    border:none;
+    border-bottom:1px solid #161616;
+    padding:8px 10px 8px 10px;
+}
+#footer_menu li:hover a {
+    color: #aaaaaa;
+}
+#footer_menu li:hover a:hover {
+    color: #000;
+}
+#footer_menu li:hover p {
+    margin:6px 0;
+}
+
+/* Right Panel */
+
+#footer_menu .right { /* Use the right class to push the content to the right */
+    float:right;
+    right:10px;
+}
+
+
+
+/*  _______________________________________
+
+    03 FOOTER - COLUMNS CONTENT
+    _______________________________________  */
+
+
+
+/* Following the principles of the 960 grid, we define here 3 containers
+   which can contain from 1 to 3 columns */
+   
+#stickyfooter .dropdown_1column, 
+#stickyfooter .dropdown_2columns, 
+#stickyfooter .dropdown_3columns {
+    margin:4px auto;
+    position:absolute;
+    padding:10px 5px 10px 5px;
+    display:none;
+    text-align:left;
+}
+
+/* Drop Downs Sizes */
+
+#stickyfooter .dropdown_1column {width: 140px;}
+#stickyfooter .dropdown_2columns {width: 280px;}
+#stickyfooter .dropdown_3columns {width: 420px;}
+
+/* Showing Drop Down on Mouse Hover - Left aligned */
+
+#footer_menu li:hover .dropdown_1column, 
+#footer_menu li:hover .dropdown_2columns, 
+#footer_menu li:hover .dropdown_3columns {
+    display: block;
+    position: absolute;
+    margin: 0 0 0 -16px;
+    bottom:40px;
+    background-color:#222222;
+    border: 1px solid #111111;
+
+    /* CSS3 Stylings - Rounded Corners */
+    -moz-border-radius: 7px 7px 0px 0px;
+    -webkit-border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0px 0px;
+}
+
+/* Columns sizes, they have to be placed within a dropdown_columns DIV */
+
+#stickyfooter .col_1,
+#stickyfooter .col_2,
+#stickyfooter .col_3 {
+    display:inline;
+    float: left;
+    position: relative;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#stickyfooter .col_1 {width:130px;}
+#stickyfooter .col_2 {width:270px;}
+#stickyfooter .col_3 {width:410px;}
+
+/* Lists stylings */
+
+#footer_menu li ul.simple { /* Reset stylings for other lists inside columns */
+    margin-left:5px;
+}
+#footer_menu li ul.simple li {
+    border:none;
+    padding:0px;
+    width:120px;
+    line-height:24px;
+    margin-left:5px;
+}
+
+
+.show_hide {
+    display:none;
+}
+

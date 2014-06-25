@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	padding:0px;
+	margin:0px;
+}
+.main{
+	width:1024px;
+	height:768px !important;
+	padding:0px;
+	margin:0px;
+background: #fff793; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMjQlIiBzdG9wLWNvbG9yPSIjZmZmNzkzIiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iNjglIiBzdG9wLWNvbG9yPSIjZDJlNjM4IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2MzZDgyNSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9yYWRpYWxHcmFkaWVudD4KICA8cmVjdCB4PSItNTAiIHk9Ii01MCIgd2lkdGg9IjEwMSIgaGVpZ2h0PSIxMDEiIGZpbGw9InVybCgjZ3JhZC11Y2dnLWdlbmVyYXRlZCkiIC8+Cjwvc3ZnPg==);
+background: -moz-radial-gradient(center, ellipse cover,  #fff793 24%, #d2e638 68%, #c3d825 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(24%,#fff793), color-stop(68%,#d2e638), color-stop(100%,#c3d825)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  #fff793 24%,#d2e638 68%,#c3d825 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  #fff793 24%,#d2e638 68%,#c3d825 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  #fff793 24%,#d2e638 68%,#c3d825 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  #fff793 24%,#d2e638 68%,#c3d825 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff793', endColorstr='#c3d825',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+.title{
+	position:absolute;
+	right:80px;
+	bottom:250px;
+	text-align:right;
+	color:rgba(255,255,255,1);
+	font-family:"微軟正黑體";
+	font-size:72px;
+	font-weight:bold;
+	text-shadow: rgba(0,0,0,.4) 3px 3px 10px;
+}
+.menu-title{
+	text-align: center;
+	color:rgba(255,255,255,1);
+	font-family:"微軟正黑體";
+	padding-top:50px;
+	font-size:50px;
+	font-weight:bold;
+	text-shadow: rgba(0,0,0,.4) 3px 3px 10px;
+}
+.start-bt{
+	cursor: pointer;
+	width:200px;
+	padding:15px;
+	position:absolute;
+	text-align:center;
+	right:80px;
+	bottom:100px;
+	font-family:"微軟正黑體";
+	font-size:40px;
+	font-weight:bold;
+	color:rgba(255,255,255,1);
+	background: rgba(0,102,51,.8);
+	border-radius:10px;
+	box-shadow: 0 6px #009933;
+}
+.start-bt:hover{
+	bottom:96px;
+	box-shadow: 0 2px #009933;
+}
+.SF{
+	width:660px;
+	margin: 0 auto;
+	margin-top:50px;
+}
+.sort{
+	width:180px;
+	height:250px;
+	background:rgba(255,255,255,1);
+	float:left;
+	margin:20px;
+	text-align:center;
+	font-size:40px;
+	font-family:"微軟正黑體";
+	font-weight:bold;
+}
+.bt-home{
+	cursor: pointer;
+	width:80px;
+	height:80px;
+	background:url(img/bt-home.png);
+	background-size:80px 80px;
+	position:absolute;
+	left:10px;
+	top:10px;
+}
+.bt-sound{
+	cursor: pointer;
+	width:80px;
+	height:80px;
+	background:url(img/bt-sound.png);
+	background-size:80px 80px;
+	position:absolute;
+	right:10px;
+	top:10px;
+}
+.cardarea{
+	width:1024px;
+	height:500px;
+	background: rgba(255,255,255,.5);
+	position:absolute;
+	top:105px;
+}
+.card{
+	width:400px;
+	height:400px;
+	background-color:rgba(255,255,255,1);
+	margin:0 auto;
+	margin-top:40px;
+}
+.cardimg{
+	width:350px;
+	height:350px;
+	background-color: rgba(0,0,0,1);
+	margin:0 auto;
+	margin-top:40px;
+}
+.cardimg img{
+	width:350px;
+	height:350px;
+}
+.cardtext{
+	text-align:center;	
+}
+.Con{
+	display:inline;
+	color:rgba(255,102,153,1);
+	font-size:30px;
+}
+.Vow{
+	display:inline;
+	color:rgba(51,153,255,1);
+	font-size:30px;
+}
